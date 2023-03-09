@@ -13,7 +13,7 @@ try:
         time.sleep(2)
 except KeyboardInterrupt as err:
     #real arp packet for target
-    arp_reply_target_real=ARP(op=2,pdst="192.168.1.105",psrc="192.168.1.1",hwdst="18:00:57:e2:57:39",hwsrc="e8:48:b8:14:09:4d")
+    arp_reply_target_real=ARP(op=2,pdst="192.168.1.105",psrc="192.168.1.1",hwdst="18:00:57:e2:57:39",hwsrc="e8:y8:hh:14:09:4d")
     #real arp packet for router
     arp_reply_target_router_real=ARP(op=2,pdst="192.168.1.1",psrc="192.168.1.105",hwdst="e8:y8:hh:14:09:4d",hwsrc="18:00:57:e2:57:39")
     send(arp_reply_target_real,arp_reply_target_router_real)
